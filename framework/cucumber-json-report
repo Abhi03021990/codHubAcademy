@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-02T15:22:26.968Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8775000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Search one way flights",
+        "description": "",
+        "id": "expedia-flights;search-one-way-flights",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4191000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is on expedia home page",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.user_is_on_expedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3243000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user clicks on flights tab",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.user_clicks_on_flights_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5073000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on oneway",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.user_clicks_on_oneway()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: Element cannot be interacted with via the keyboard because it is not displayed\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-2MS9PO4S\u0027, ip: \u0027192.168.0.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.ie.InternetExplorerDriver\nCapabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:7673/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b4ec1cf5-ef2e-4d3d-836f-441beb3a9b83\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)\r\n\tat frameworkUtils.CoreUtils.pressDownArrow(CoreUtils.java:59)\r\n\tat actions.ExpediaReusableActions.enterText(ExpediaReusableActions.java:22)\r\n\tat actions.ExpediaFlightsActions.enterDestination(ExpediaFlightsActions.java:26)\r\n\tat stepDefenitions.ExpediaFlightsStepDefenition.enter_source_destination_and_departure_date(ExpediaFlightsStepDefenition.java:29)\r\n\tat ✽.enter source , destination and departure date(file:///D:/Java%20Training/codHubAcademy/framework/src/test/resources/features/ExpediaFlights.feature:6)\r\n",
+              "duration": 11526000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "enter source , destination and departure date",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.enter_source_destination_and_departure_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on search button",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the corresponding seartch results should be displayed",
+            "match": {
+              "location": "stepDefenitions.ExpediaFlightsStepDefenition.the_corresponding_seartch_results_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Expedia flights",
+    "description": "",
+    "id": "expedia-flights",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ExpediaFlights.feature",
+    "tags": []
+  }
+]
