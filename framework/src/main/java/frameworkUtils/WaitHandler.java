@@ -22,6 +22,9 @@ public class WaitHandler extends CoreUtils{
 	public void waitForElementToBeClickable(WebElement element) {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+	public void waitForElementToBeloaded(String xpath) {
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath)));
+	}
 	
 	 
 
